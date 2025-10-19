@@ -466,6 +466,9 @@ img{
 #testmonial{
     padding-bottom: 60px;
 }
+.test_col{
+    margin-top: 20px;
+}
 .test_img{
     width: 80px;
     margin: 0 auto;
@@ -475,6 +478,7 @@ img{
     background: #f1f1f1;
     margin-top: 36px;
     text-align: center;
+    position: relative;
 }
 .test_details h3{
     font-size: 16px;
@@ -490,4 +494,36 @@ img{
    color: #555555;
    line-height: 24px;
 }
+.test_details::after{
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: red;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform:   translateX(-50%) rotate(45deg) ;
+    z-index: -1;
+    background: #f1f1f1;
+   
+    
+}
+.test_details ul{
+    display: flex;
+    
+    justify-content: center;
+    margin: 10px 0;
+}
+.test_details ul li a{
+    color: #0872b9;
+}
 /* ========================== testmonial part end ==================== */
+/* ========================= footerpartstart=============================== */
+#footer_part_start{
+    padding: 20px 0;
+    background: #353535;
+}
+.footer_logo img{
+    width: 80px;
+}
+/* ========================= footerpartend=============================== */
